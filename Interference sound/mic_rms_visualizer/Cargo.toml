@@ -1,0 +1,24 @@
+[package]
+name = "mic_rms_visualizer"
+version = "0.1.0"
+edition = "2021"
+
+default-run = "mic_2d"
+
+[dependencies]
+cpal = "0.15"
+anyhow = "1.0"
+eframe = { version = "0.27", features = ["glow"] }
+egui = "0.27"
+egui_plot = "0.27"
+kiss3d = "0.35"
+crossbeam = "0.8"
+nalgebra = "0.30"  # Required explicitly for 3D math types used in mic_3d.rs
+
+[[bin]]
+name = "mic_2d"
+path = "src/main.rs"
+
+[[bin]]
+name = "mic_3d"
+path = "src/bin/mic_3d.rs"
