@@ -22,3 +22,7 @@ path = "src/main.rs"
 [[bin]]
 name = "mic_3d"
 path = "src/bin/mic_3d.rs"
+
+[[bin]]
+name = "mic_2d_A_vs_x"
+path = "src/bin/mic_2d_A_vs_x.rs"
